@@ -1,0 +1,26 @@
+
+<!--
+  multiple problems:
+    -the css import path is relative to the importing html file.
+      -> same behavior without polyfill.
+    -the styles get only applied in chrome
+     -> possible polyfill problem.
+ -->
+<template id="brick-tabbar-template">
+
+  <!-- style tags import itself  -->
+  <style>
+    :host {
+      color: green;
+    }
+    ::content {
+      color: red;
+    };
+
+  </style>
+  <h1>host</h1>
+  <content></content>
+
+</template>
+
+<script src="element.js"></script>
