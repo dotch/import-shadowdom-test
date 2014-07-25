@@ -1,5 +1,7 @@
 (function() {
 
+  var currentScript = document._currentScript || document.currentScript;
+
   var element = Object.create(HTMLElement.prototype);
 
   element.createdCallback = function() {
