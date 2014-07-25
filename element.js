@@ -12,6 +12,7 @@
 
     shadowRoot.appendChild(template.content.cloneNode(true));
 
+    console.log("initalized");
   };
 
   document.registerElement('x-hello', {
