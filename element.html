@@ -1,6 +1,10 @@
 <template id="template">
 
   <style>
+    * {
+      background: yellow;
+    }
+
     :host {
       color: green;
     }
@@ -28,8 +32,6 @@
       var shadowRoot = this.createShadowRoot();
 
       shadowRoot.appendChild(template.content.cloneNode(true));
-
-      console.log("initalized");
     };
 
     document.registerElement('x-hello', {
